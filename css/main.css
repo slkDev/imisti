@@ -1,0 +1,231 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #020305;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #111111;
+}
+
+@font-face {
+  font-family: cosi;
+  src: url(/src/fonts/cosi.ttf);
+}
+
+body {
+  background: #020305;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  font-family: cosi;
+}
+
+.loading {
+  background: #020305;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  font-size: 6px;
+  font-weight: 100;
+  width: 100vw;
+  position: absolute;
+  height: 100vh;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.loading .progresBar {
+  width: 100px;
+  height: 100px;
+  border-radius: 55%;
+  border: solid 1px white;
+  display: -ms-grid;
+  display: grid;
+  place-content: ceneter;
+}
+
+.loading .progresBar h1 {
+  margin: auto;
+}
+
+.close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cursor {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: white;
+  -webkit-transition: all 230ms;
+  transition: all 230ms;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  z-index: 99;
+}
+
+.cursor .change {
+  display: none;
+  color: #020305;
+  font-size: 15px;
+}
+
+.explore {
+  width: 100px;
+  height: 100px;
+}
+
+#container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+#container canvas {
+  display: block;
+}
+
+.page {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+}
+
+.page .intro {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.page .intro h1 {
+  color: white;
+  position: relative;
+  font-size: 62px;
+  margin: auto;
+  text-transform: uppercase;
+  z-index: 2;
+  text-align: center;
+}
+
+.page .intro h1 .literaIntro {
+  display: inline-block;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  opacity: 0;
+  -webkit-transform: scaleY(0.6);
+          transform: scaleY(0.6);
+  -webkit-transform: rotateW(-270deg);
+          transform: rotateW(-270deg);
+}
+
+.page .intro .ramka {
+  position: relative;
+  width: 200px;
+  height: 2px;
+  background: white;
+  z-index: 10;
+  margin: auto;
+  opacity: 0;
+}
+
+.page .pageTwo {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10vw 1fr 1fr 10vw;
+      grid-template-columns: 10vw 1fr 1fr 10vw;
+}
+
+.page .pageTwo h1 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  color: white;
+  font-size: 100px;
+  margin: auto auto auto 0px;
+  text-transform: uppercase;
+  z-index: 10;
+  text-align: left;
+  width: 100px;
+}
+
+.page .pageTwo #text {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.page .pageTwo #text canvas {
+  display: block;
+}
+
+.page .pageThree {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10vw 1fr 1fr 10vw;
+      grid-template-columns: 10vw 1fr 1fr 10vw;
+}
+
+.page .pageThree h1 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  color: white;
+  font-size: 100px;
+  margin: auto auto auto auto;
+  text-transform: uppercase;
+  z-index: 10;
+  text-align: right;
+  width: 100px;
+}
+
+.page .kontakt {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-content: cetner;
+}
+
+.page .kontakt h1 {
+  color: white;
+  font-size: 100px;
+  margin: auto;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.page .kontakt a {
+  text-transform: none;
+  color: white;
+  font-size: 64px;
+  margin: auto auto auto auto;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 100;
+}
+/*# sourceMappingURL=main.css.map */
